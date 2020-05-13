@@ -1,22 +1,22 @@
-# portfolio2.1
-2nd update of my second portfolio
+# portfolio2.2
+3rd update of my second portfolio
 
 
 notes:
-when compared to version 2 there should be additional projects including 
-liri, my 2nd group project and revised buttons.  
+when compared to version 2.1 there should be additional projects including 
+liri, turtle friend finder, and potentially more as we finish project 3
 
 # Ben Mulholland Portfolio
-* thank you for taking the time to look at the readme for the 3rd version of my portfolio
+* thank you for taking the time to look at the readme for the 4th version of my portfolio
 
 ## notes
-* all content is the creation of myself with the exception of PokeWeatherApp and Pandemic Portal that were group projects.  
+* all content is the creation of myself with the exception of PokeWeatherApp and ToDoGotchi which were group projects.  
 
-* a lot of searching went into finding a nice template, then I gave up on trying to use all of those and kept playing with Css.  my next iteration will have an interactive element using js somewhere on the contact page.
+* further plans for my portfolio are using css animations and incorporating some of the Canvas I've learned during project 3, I will refine and place my 'ambience' player in a seperate repo and share that sometime in early June or July.
 
 * Phone number is not provided.
 
-* all audio are protected under copywright, please ask permission before usage.
+* all audio and images are by me protected under copywright, please ask permission before usage.  Some are available under Creative Commons Usage.
 
 ## Thanks!
 
