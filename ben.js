@@ -11,15 +11,17 @@
   
 // songs that will play in an array
 var songs = [
-    "quaranrelax.mp3","spiral shell.mp3"
+    "quaranrelax.mp3","spiral shell.mp3","undertow.mp3"
 
 ];
+//for more songs just add to array
 
 //array of posters
 
 var poster = [
-    "quaranrelaxcover.jpg", "spiralshellcover.jpg"
+    "quaranrelaxcover.jpg", "spiralshellcover.jpg", "undertow.gif"
 ];
+// for more posters just add to array
 
 var songTitle = document.getElementById("songTitle");
 var fillBar = document.getElementById("fill");
