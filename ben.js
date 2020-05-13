@@ -4,6 +4,10 @@
       alert("Please send me an email to request phone number");
 };
 
+
+    function audioPlayer() {
+        alert("This Audio player was created using HTML, CSS, and JS.  I created it inside of my portfolio, instead of placing it inside a seperate repository.  I wanted to make a sort of hidden feature of my portfolio that still felt like my main portfolio.  In the future, I plan to make a similar audio player in an APP that includes a metronome and tuner.");
+    } ;
   
 // songs that will play in an array
 var songs = [

@@ -150,9 +150,23 @@ h3, h2 {
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
+  opacity: .5 1;
+  transition-delay: 3s;
+}
+
+/* audio player */
+.main-Player {
+  float: left;
+  width: 100%;
+  max-width: 888px;
+  padding: 88px;
+  margin: 0 0 40px;
+  background: #020202;
+  border: 1px solid #dddddd;
   opacity: .5 .6 .7 .8 .9 1;
   transition-delay: 500ms;
 }
+
 
 /* buttons in contact  */
 .button {
@@ -172,7 +186,24 @@ h3, h2 {
 
 }
 
+/* button in audio player */
+.button2{
+  background-color: black;
+  font-family: 'Quantico', sans-serif;
+  border: solid;
+  border-radius: 15px, 50px, 30px, 5px;
+  color: cyan;
+  padding: 7px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+  
 
+}
 
 
 
@@ -311,6 +342,7 @@ looking at other examples for guidance, trying to make these
 }}}
 
 
+
 /* JA/\/\in ambience player */
 
 #bg{
@@ -371,7 +403,7 @@ looking at other examples for guidance, trying to make these
 #songTitle{
   width:200px;
   text-align: center;
-  background-color: rgb(2, 133, 52, .6);
+  background-color: rgb(0, 0, 0);
   border-radius:20%;
   font-family:'Quantico', sans-serif;
   font-size: 18px;
@@ -395,7 +427,7 @@ looking at other examples for guidance, trying to make these
   width:50px;
   height:50%;
   border: 0;
-  background-color:rgb(255, 217, 0);
+  background-color:cyan;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
@@ -424,9 +456,9 @@ looking at other examples for guidance, trying to make these
 }
 
 #seek-bar{
-  width:150px;
+  width:fill;
   height:9px;
-  background-color: gray;
+  background-color: rgb(28, 27, 27);
   display:flex;
   border-radius:50px;
   margin-left:25px;
