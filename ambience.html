@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ben Mulholland</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+  <!-- <script src="jquery-1.10.2.min.js"></script> -->
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ben Mulholland</a>
+      <nav>
+        
+        <a href="contact.html">Back to Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Ambience</h1>
+
+
+
+    <!-- audio player will go here -->
+
+        <div id="bg">
+          <div id="blackLayer"></div>
+          <img src="./assets/audio/quaranrelaxcover.jpg"/>
+        </div>
+
+        <div id="mainAlbum">
+          <div id="imageAlbum">
+            <img src="./assets/audio/quaranrelaxcover.jpg"/>
+          </div>
+          <div id="player">
+            <div id="songTitle">Demo</div>
+            <div id="buttons">
+              <button id="pre" onclick="prev()"><img src="./assets/audio/pre (1).png" height="90%" width="90%"/></button>
+              <button id="play" onclick="playOrPauseSong()"><img src="./assets/audio/play.png"/></button> 
+              <button id="next" onclick="next()"><img src="./assets/audio/next.png" height="90%" width="90%"/></button>
+              </div>
+            
+              <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Music and Images Copyright &copy; 2020 Ben Mulholland
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./ben.js"></script>
+</body>
+
+</html>

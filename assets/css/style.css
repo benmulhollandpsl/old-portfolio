@@ -1,0 +1,450 @@
+
+
+body {
+  font-family: 'Quantico', sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: black;
+  background: url("../images/contact.jpg");
+}
+
+
+/* Inside your Responsive-Portfolio folder, 
+find your styles.css file. You will write your media queries 
+at the bottom of styles.css.
+
+Use three @media screen tags, 
+each with one of these max-widths: 980px, 768px and 640px. */
+* {
+  box-sizing: border-box;
+}
+
+/* general */
+
+.container {
+  width: 100%;
+  content: "";
+  display: table;
+  max-width: 1000px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1 {
+  font-family: 'Quantico', sans-serif;
+  text-align: center;
+}
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+  font-family: 'Quantico', sans-serif;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 700;
+  color:rgb(18, 177, 124);
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+/* header */
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 20px;
+  overflow: auto;
+  color: #ffffff;
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 80px;
+  font-family: 'Quantico', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(100, 194, 135);
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color:  rgb(100, 194, 135);
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  background: rgb(100, 194, 135);
+  border-top: 8px solid #408606;
+  height: 50px;
+}
+
+h3, h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+  opacity: .5 .6 .7 .8 .9 1;
+  transition-delay: 500ms;
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 888px;
+  padding: 88px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  opacity: .5 .6 .7 .8 .9 1;
+  transition-delay: 500ms;
+}
+
+/* buttons in contact  */
+.button {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Quantico', sans-serif;
+  border: none;
+  border-radius: 15px, 50px, 30px, 5px;
+  color: rgb(11, 14, 236);
+  padding: 7px 1px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+
+}
+
+
+
+
+
+
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  background-size: auto;
+  margin: 20px 20px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  float: none;
+  width: 274px;
+  height: 245px;
+  border: 5 5 rgb(255, 255, 255);
+  opacity:.9;
+}
+
+.work h3, h4, h5 {
+  position: webkit-sticky;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #2f9e4b;
+  border-bottom: 0;
+}
+
+
+
+
+
+
+
+
+.auth-image {
+  float: left;
+  width: 700px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+.auth-image1 {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  opacity: .7
+}
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+/* this doesn't do anything I can observe yet, 
+looking at other examples for guidance, trying to make these
+ media tags  match the screenshots, how do i match my @media screen tags?*/
+@media only screen and (max-width: 980px) {
+  body {font-family: 'Quantico', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: black;
+    background: url("../images/contact.jpg");
+  
+  }
+
+@media only screen and (max-width: 768px) {
+  body {font-family: 'Quantico', sans-serif;
+    font-size: 10px;
+    line-height: 25px;
+    color: black;
+    background: url("../images/canoemany.jpg");
+    
+    }
+
+@media only screen and (max-width: 640px) {
+  body {font-family: 'Quantico', sans-serif;
+    font-size: 8px;
+    line-height: 16px;
+    color: black;
+    background: url("../images/canoemany.jpg");
+    
+      
+      }
+}}}
+
+
+/* JA/\/\in ambience player */
+
+#bg{
+  height:55%;
+  width: 80%;
+  position: absolute;
+  overflow: hidden;
+
+}
+/* bg is the blurry background */
+#bg img{
+  height: 86%;
+  width:86%;
+  filter:blur(20px); 
+  /* what is the -webkit-filter mean? */
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  float: center
+}
+
+#blackLayer{
+  height: 75%;
+  width: 75%;
+  background-color: rgb(25, 47, 33, 0);
+  position: absolute;
+  z-index:99;
+}
+
+
+#mainAlbum{
+  width:40%;
+  background-color:rgb(255, 255, 255);
+  border-radius: 15px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+}
+/* the notblurry photo on top is mainAlbum and imageAlbum */
+#imageAlbum img{
+  height: 180px;
+  width: 100%;
+  margin-top: -5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+#player{
+  padding: 25px;
+  color: cyan;
+
+}
+#songTitle{
+  width:200px;
+  text-align: center;
+  background-color: rgb(2, 133, 52, .6);
+  border-radius:20%;
+  font-family:'Quantico', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+#buttons{
+  height: 72px;
+  width: 100%;
+  margin-top: 50px;
+  position:relative;
+  top:10%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#play, #next, #pre{
+  width:50px;
+  height:50%;
+  border: 0;
+  background-color:rgb(255, 217, 0);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+#next{
+  width:30px;
+  height: 30px;
+  left:80%;
+}
+#pre{
+  width:30px;
+  height: 30px;
+  left:20%;
+}
+
+#play img, #next img, #pre img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#seek-bar{
+  width:150px;
+  height:9px;
+  background-color: gray;
+  display:flex;
+  border-radius:50px;
+  margin-left:25px;
+  cursor: pointer;
+
+}
+#fill{
+  height: 8px;
+  background-color:cyan;
+  border-radius: 20px;
+
+}
+#handle{
+  width: 8px;
+  height: 8px;
+  background-color: rgb(0, 212, 212);
+  border-radius: 50%;
+  margin-left: -5px;
+  transform: scale(2);
+}
+
