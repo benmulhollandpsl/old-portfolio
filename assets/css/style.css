@@ -336,9 +336,7 @@ input[type=submit] {
     font-size: 14px;
     line-height: 30px;
     color: black;
-    /* background: url("../images/contact.jpg"); */
     /* background-size:contain; */
-    /* background-image: url("../images/contact.jpg"); */
     background: blue;
     
 
@@ -359,10 +357,9 @@ input[type=submit] {
     line-height: 25px;
     color: black;
     background: blue;
-    /* background-image: url("../images/canoemany.jpg"); */
     
     /* background-size:contain; */
-    }}
+    };}
 
 @media only screen and (max-width: 640px) {
   body {font-family: 'Quantico', sans-serif;
@@ -370,12 +367,11 @@ input[type=submit] {
     line-height: 16px;
     color: black;
 background: blue;
-    /* background-image: url("../images/canoemany.jpg"); */
     /* background-size:contain; */
    
     
       
-      }
+      };
 }
 
 /* body.background-image { filter: blur(8px);
