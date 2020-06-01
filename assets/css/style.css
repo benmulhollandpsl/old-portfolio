@@ -28,6 +28,7 @@ each with one of these max-widths: 980px, 768px and 640px. */
   max-width: 1000px;
   margin: 0 auto;
   clear: both;
+  box-shadow: 5px;
 }
 
 h1 {
@@ -50,7 +51,8 @@ h2,
 h3 {
   font-family: 'Quantico', sans-serif;
   font-weight: 700;
-  color:rgb(18, 177, 124);
+  color:  seagreen;
+  text-shadow: 5px -5px 1 white;
 }
 
 h1 {
@@ -103,7 +105,8 @@ nav a {
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color:  rgb(100, 194, 135);
+  color:  seagreen;
+  text-shadow: 5px -5px 1 white;
   text-decoration: none;
   border-left: 1px solid #efefef;
 }
@@ -119,11 +122,10 @@ footer {
   clear: both;
   font-size: 12px;
   color: #ffffff;
-  color: #cccccc;
   text-align: center;
-  background: rgb(100, 194, 135);
-  border-top: 8px solid #408606;
-  height: 50px;
+  background: skyblue;
+  border-top: 4px solid rgb(0, 208, 255);
+  height: 100px;
 }
 
 h3, h2 {
@@ -140,7 +142,23 @@ h3, h2 {
   min-height: calc(100vh - 70px);
   opacity: .5 .6 .7 .8 .9 1;
   transition-delay: 500ms;
+
+ 
+    
+    -webkit-animation: fadein 3s linear forwards;
+    animation: fadein 2s linear forwards;
 }
+
+@-webkit-keyframes fadein {
+  0%{ opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadein {
+  0%{ opacity: 0; }
+  50% { opacity: 1; }
+}
+
 
 .main-section {
   float: left;
@@ -148,10 +166,11 @@ h3, h2 {
   max-width: 888px;
   padding: 88px;
   margin: 0 0 40px;
-  background: #ffffff;
+  background: skyblue;
   border: 1px solid #dddddd;
   opacity: .5 1;
   transition-delay: 3s;
+  color: white;
 }
 
 /* audio player */
@@ -215,7 +234,7 @@ h3, h2 {
   position: relative;
   float: left;
   width: 274px;
-  background-size: auto;
+  background-size: contain;
   margin: 20px 20px;
   overflow: auto;
 }
@@ -272,7 +291,7 @@ h3, h2 {
 /* contact page */
 
 #contact-form ul {
-  margin-bottom: 20px;
+  margin-bottom:50px;
 }
 
 #contact-form li {
@@ -309,17 +328,28 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* this doesn't do anything I can observe yet, 
-looking at other examples for guidance, trying to make these
- media tags  match the screenshots, how do i match my @media screen tags?*/
+
+
+/* responsive screen sizes */
 @media only screen and (max-width: 980px) {
   body {font-family: 'Quantico', sans-serif;
     font-size: 14px;
     line-height: 30px;
     color: black;
     background: url("../images/contact.jpg");
+    /* background-size:contain; */
+   
+
+     
+  };
   
-  }
+}
+
+
+
+
+
+  
 
 @media only screen and (max-width: 768px) {
   body {font-family: 'Quantico', sans-serif;
@@ -327,8 +357,8 @@ looking at other examples for guidance, trying to make these
     line-height: 25px;
     color: black;
     background: url("../images/canoemany.jpg");
-    
-    }
+    /* background-size:contain; */
+    }}
 
 @media only screen and (max-width: 640px) {
   body {font-family: 'Quantico', sans-serif;
@@ -336,10 +366,11 @@ looking at other examples for guidance, trying to make these
     line-height: 16px;
     color: black;
     background: url("../images/canoemany.jpg");
+    /* background-size:contain; */
     
       
       }
-}}}
+}
 
 
 
