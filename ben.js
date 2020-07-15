@@ -87,3 +87,29 @@ function prev(){
 
 //calling next on button click 
 //posters need to be set to each song
+
+
+
+
+
+// keylogger for frenchhorn to open facebook artist page
+const pressed = [];
+const secretCode = 'frenchhorn';
+
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    if(pressed.join('').includes(secretCode)){
+      console.log('youdidit');
+      window.open("https://www.facebook.com/benjaminmulhornlland", "Facebook Artist Page");
+    }
+    //add other codes to other pages as I go
+  console.log(pressed);
+});
+
+
+
+
+
+
