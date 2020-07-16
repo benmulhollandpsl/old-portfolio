@@ -51,8 +51,8 @@ h2,
 h3 {
   font-family: 'Quantico', sans-serif;
   font-weight: 700;
-  color:  seagreen;
-  text-shadow: 5px -5px 1 white;
+  color:  white;
+  text-shadow: 5px -5px 1 cyan;
 }
 
 h1 {
@@ -288,6 +288,39 @@ h3, h2 {
   margin-right: 25px;
   opacity: .7
 }
+
+/* aligns float and slide effect  */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+
+
 /* contact page */
 
 #contact-form ul {

@@ -26,36 +26,91 @@
     <section class="main-section">
       <h1>About Me</h1>
 
-      <img src="./assets/images/tribenforce.jpg" class="auth-image" alt="bens2.1">
+      <img src="./assets/images/tribenforce.jpg" class="auth-image align-left slide-in" alt="bens2.1">
 
-      <p>Ben is a Full Stack Web Developer, Educator, and Musician-Composer based in Philadelphia, PA.
+      <p>Ben Mulholland is a Full Stack Web Developer, Educator, and Musician-Composer based in Philadelphia, PA.
         <br>His playing can be heard with various orchestras and ensembles ranging from classical and contemporary, to Pop and Indie groups.<br>
        <br>
-       <p>As a recent graduate with a certificate in Full Stack Web Development at the University of Pennsylvania LPS' bootcamp program, Ben looks forward to applying newly developed skills to solving problems and meaningfully contributing to communities.
+       <p>As a recent graduate with a certificate in Full Stack Web Development at the University of Pennsylvania LPS' bootcamp program, Ben looks forward to applying newly developed skills to solving problems and meaningfully contributing to communities.</p>
         <br>
         <a href="https://docs.google.com/document/d/1jwBYGz29xXrrfwOz9YW1cz0CIpNOvoAPw6qLP6ZMIJw/edit?usp=sharing">Ben's Resume</a>
         <!-- attach new pdf to this, make this a shared folder on google drive, so i can easier swap in resumes as they update -->
-      </p>
-       <br>
-       <h2>Some Highlights</h2>
-        <iframe width="420" height="236.5" src="https://www.youtube.com/embed/SZxIAWJmK3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>French Horn performed on a recent recording with iNFiNiEN.</p>
+      
+       <br> <br>
+       <h2><strong>Horn Highlights</strong></h2>
+        
+       <iframe width="420" height="236.5" src="https://www.youtube.com/embed/SZxIAWJmK3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="align-right slide-in"></iframe>
+        <p>French Hornist on recent iNFiNiEN album.  Recorded at Turtle Studios in South Philly.</p>
         <br>
-        The first 
-        Composition teaching artist for an El Sistema USA Music Program at 'Play On, Philly!'.<br>
-       
-        <iframe width="420" height="236.5" src="https://www.youtube.com/embed/7w_ylasNsTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>One of our collaborations with PhillyCam.</p>
+        <br>
+
+        <br>
+       <h3>Educator</h3>
+        <iframe width="420" height="236.5" src="https://www.youtube.com/embed/7w_ylasNsTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="align-left slide-in"></iframe>
+        <p>The first 
+          Composition teaching artist for an El Sistema USA Music Program.  One of our collaborations with <em>PhillyCam</em> and <em>Play On, Philly</em>.</p>
         <br><br>
-        Ben's compositions and arrangements can be heard performed
-        by various school and professional ensembles.
         <br>
-        <a href="https://www.sheetmusicplus.com/publishers/mulholland-music-sheet-music/3012320">Ben's SMP publisher page</a><br><br>
+        <h3>Composition and Arrangements</h3>
+        <p>Ben's Compositions and arrangements are for everything from beginning band and orchestra, to chamber ensembles and professional orchestras.</p>
+        <a href="https://www.sheetmusicplus.com/publishers/mulholland-music-sheet-music/3012320">Ben's compositions and arrangements</a><br><br>
       
         
     </section>
 
   </div>
+
+
+    <!-- js for slide in for images on index page, maybe expanding to portfolio in next iteration -->
+  <script>
+    function debounce(func, wait = 20, immediate = true) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    }
+
+    const sliderImages = document.querySelectorAll('.slide-in');
+    
+    
+    function checkSlide(e) {
+      
+      
+      sliderImages.forEach(sliderImage => {
+          //halfway through image
+        
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        //bottom of image
+          const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        //is the image halfshown and if not show it
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+        if(isHalfShown && isNotScrolledPast) {
+          sliderImage.classList.add('active');
+        } else {
+          sliderImage.classList.remove('active');
+        }
+
+
+      });
+      
+      console.log(e);
+    }
+  
+  window.addEventListener('scroll', debounce(checkSlide));
+
+
+  </script>
+
+
 
   <footer>
     <div class="container">

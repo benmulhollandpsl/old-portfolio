@@ -1,18 +1,19 @@
-# portfolio2.2
+# portfolio2.3
 3rd update of my second portfolio
 
 
 notes:
 when compared to version 2.1 there should be additional projects including 
 liri, turtle friend finder, and potentially more as we finish project 3
+when compared to version 2.2 there are updates to files, resume, links to and from pages, a keylogger for if a use types 'frenchhorn', and some small css and js changes.
 
 # Ben Mulholland Portfolio
-* thank you for taking the time to look at the readme for the 4th version of my portfolio
+* thank you for taking the time to look at the readme for the 5th version of my portfolio
 
 ## notes
-* all content is the creation of myself with the exception of PokeWeatherApp and ToDoGotchi which were group projects.  
+* all content is the creation of myself. PokeWeatherApp and ToDoGotchi which were group projects.
 
-* further plans for my portfolio are using css animations and incorporating some of the Canvas I've learned during project 3, I will refine and place my 'ambience' player in a seperate repo and share that sometime in early June or July.
+* further plans for my portfolio are using css animations and incorporating some of the Canvas I've learned during project 3.  I will be rebuilding my portfolio in React and using a custom domain for it starting in late August. 
 
 * Phone number is not provided.
 

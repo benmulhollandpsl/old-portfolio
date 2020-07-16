@@ -103,6 +103,7 @@ window.addEventListener('keyup', (e) => {
     if(pressed.join('').includes(secretCode)){
       console.log('youdidit');
       window.open("https://www.facebook.com/benjaminmulhornlland", "Facebook Artist Page");
+        
     }
     //add other codes to other pages as I go
   console.log(pressed);
